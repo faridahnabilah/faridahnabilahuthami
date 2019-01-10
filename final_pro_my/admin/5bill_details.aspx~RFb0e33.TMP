@@ -1,0 +1,96 @@
+<%@ Page Language="C#" MasterPageFile="~/admin/admin_Master.master" AutoEventWireup="true" CodeFile="5bill_details.aspx.cs" Inherits="admin_5bill_details" Title="Untitled Page" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function TABLE1_onclick() {
+
+}
+
+// ]]>
+</script>
+
+ <table style="border-right: maroon thick groove; border-top: maroon thick groove;
+        border-left: maroon thick groove; width: 100%; border-bottom: maroon thick groove" id="TABLE1" onclick="return TABLE1_onclick()">
+     <tr>
+         <td colspan="2" style="background-color: white; text-align: center">
+         </td>
+     </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: white; text-align: center">
+                                                <span style="color: Black; font-family: Georgia"><strong>Bill &nbsp;Details</strong></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: white; text-align: right">
+                                                <span style="color: #ff3333"><strong><span style="color: black">.</span></strong></span></td>
+                                        </tr>
+     <tr>
+         <td align="right" style="width: 25%; height: 24px">
+             <strong>Bill No:</strong></td>
+         <td align="left" style="width: 70%; height: 24px">
+             <asp:TextBox ID="TextBox2" runat="server" Width="131px"></asp:TextBox></td>
+     </tr>
+                                        <tr>
+                                            <td align="right" style="width: 25%; height: 24px;">
+                                                <strong>Date Of Journey:</strong></td>
+                                            <td align="left" style="width: 70%; height: 24px;">
+                                                <asp:TextBox ID="txtname" runat="server" Width="159px"></asp:TextBox></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right" style="width: 25%">
+                                                <strong>Time Of Journey:</strong></td>
+                                            <td align="left" style="width: 70%">
+                                                <asp:TextBox ID="txtage" runat="server" Width="159px"></asp:TextBox></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right" style="width: 25%">
+                                                <strong>Sourse : </strong>
+                                            </td>
+                                            <td align="left" style="width: 70%">
+                                                <asp:TextBox ID="txtphone" runat="server" Width="219px"></asp:TextBox></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right" style="width: 25%">
+                                                <strong>Destination:</strong></td>
+                                            <td align="left" style="width: 70%">
+                                                <asp:TextBox ID="txtmailid" runat="server" Width="215px"></asp:TextBox></td>
+                                        </tr>
+     <tr>
+         <td align="right" style="width: 25%; height: 21px;">
+             <strong>Bus Type:</strong></td>
+         <td align="left" style="width: 70%; height: 21px;">
+             <asp:TextBox ID="TextBox1" runat="server" Width="149px"></asp:TextBox></td>
+     </tr>
+     <tr>
+         <td align="right" style="width: 25%; height: 21px">
+             <strong>Seat Numbers:</strong></td>
+         <td align="left" style="width: 70%; height: 21px">
+             <asp:TextBox ID="TextBox3" runat="server" Width="387px"></asp:TextBox></td>
+     </tr>
+     <tr>
+         <td align="right" style="width: 25%; height: 21px">
+             <strong>Total Bill:</strong></td>
+         <td align="left" style="width: 70%; height: 21px">
+             <asp:TextBox ID="TextBox4" runat="server" Width="153px"></asp:TextBox></td>
+     </tr>
+                                        <tr>
+                                            <td align="left" colspan="2" style="height: 28px">
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                <asp:Button ID="btnpvs" runat="server" BackColor="Gray" Font-Bold="True"
+                                                    ForeColor="WhiteSmoke" Height="23px" OnClick="btnpvs_Click" Style="color: #000000;
+                                                    background-color: skyblue" Text="NEXT" Width="95px" />
+                                                &nbsp; &nbsp; &nbsp; &nbsp; 
+                                                <asp:Button ID="btnnext" runat="server" BackColor="Gray"
+                                                    Font-Bold="True" ForeColor="WhiteSmoke" Height="23px" OnClick="btnnext_Click"
+                                                    Style="color: #000000; background-color: skyblue" Text="PREVIOUS" Width="95px" />
+                                                &nbsp; &nbsp;&nbsp;<asp:Button ID="btnsearch" runat="server" BackColor="Gray" Font-Bold="True"
+                                                    ForeColor="WhiteSmoke" Height="23px" OnClick="btnsearch_Click" Style="color: #000000;
+                                                    background-color: skyblue" Text="SEARCH" Width="95px" />
+                                                &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                                            </td>
+                                        </tr>
+                                    </table>
+</asp:Content>
+

@@ -1,0 +1,74 @@
+<%@ Page Language="C#" MasterPageFile="~/admin/admin_Master.master" AutoEventWireup="true" CodeFile="3_fareentry.aspx.cs" Inherits="admin_3_fareentry" Title="Untitled Page" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<table style="border-right: maroon thick groove; border-top: maroon thick groove;
+        border-left: maroon thick groove; width: 100%; border-bottom: maroon thick groove">
+        <tr>
+            <td colspan="3">
+                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong><span
+                    style="font-family: Georgia"> &nbsp;Fare Entry</span></strong></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="vertical-align: top; text-align: right">
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top; width: 100px; text-align: right">
+                Route Id:</td>
+            <td style="width: 100px">
+                <asp:DropDownList ID="ddlrouteid" runat="server" Style="position: static" Width="66px">
+                    <asp:ListItem>01</asp:ListItem>
+                    <asp:ListItem>02</asp:ListItem>
+                    <asp:ListItem>03</asp:ListItem>
+                    <asp:ListItem>04</asp:ListItem>
+                </asp:DropDownList></td>
+            <td style="width: 100px">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 100px; vertical-align: top; height: 21px; text-align: right;">
+                Bus Id:</td>
+            <td style="width: 100px; height: 21px;">
+                <asp:DropDownList ID="ddlbusid" runat="server" OnSelectedIndexChanged="ddlbusid_SelectedIndexChanged"
+                    Style="position: static" Width="66px">
+                    <asp:ListItem>01</asp:ListItem>
+                    <asp:ListItem>02</asp:ListItem>
+                    <asp:ListItem>03</asp:ListItem>
+                    <asp:ListItem>04</asp:ListItem>
+                </asp:DropDownList></td>
+            <td style="width: 100px; height: 21px;">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 100px; height: 21px; vertical-align: top; text-align: right;">
+                Date:</td>
+            <td style="width: 100px; height: 21px;">
+                <asp:TextBox ID="txtdate" runat="server"></asp:TextBox></td>
+            <td style="width: 100px; height: 21px;">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 100px; height: 14px; vertical-align: top; text-align: right;">
+                Time:</td>
+            <td style="width: 100px; height: 14px">
+                <asp:TextBox ID="txttime" runat="server"></asp:TextBox></td>
+            <td style="width: 100px; height: 14px">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="vertical-align: top; height: 26px; text-align: center">
+                <asp:Button ID="btnaddfare" runat="server" BackColor="Gray" Font-Bold="True" ForeColor="WhiteSmoke"
+                    Height="23px" Style="color: #000000; background-color: skyblue" Text="ADD" Width="95px" />&nbsp;
+                <asp:Button ID="btndelfare" runat="server" BackColor="Gray" Font-Bold="True" ForeColor="WhiteSmoke"
+                    Height="23px" Style="color: #000000; background-color: skyblue" Text="DELETE"
+                    Width="95px" />
+                <asp:Button ID="btnupdate" runat="server" BackColor="Gray" Font-Bold="True" ForeColor="WhiteSmoke"
+                    Height="23px" Style="color: #000000; background-color: skyblue" Text="UPDATE" Width="95px" OnClick="btnupdate_Click" /></td>
+        </tr>
+    </table>
+</asp:Content>
+
